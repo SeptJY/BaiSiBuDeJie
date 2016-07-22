@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9052" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JYAttentionController">
+            <connections>
+                <outlet property="leftTabView" destination="rXf-1K-EJk" id="ADC-Rm-Zrx"/>
+                <outlet property="rightTableView" destination="1Qc-Mz-b6Y" id="zXv-0k-AeA"/>
+                <outlet property="view" destination="iN0-l3-epB" id="FyH-B2-IfS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rXf-1K-EJk">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="baf-LT-xKY"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="O8r-dF-k2Q"/>
+                        <outlet property="delegate" destination="-1" id="aUf-K7-NNW"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Qc-Mz-b6Y">
+                    <rect key="frame" x="70" y="0.0" width="530" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="w79-yi-4wt"/>
+                        <outlet property="delegate" destination="-1" id="2kh-Ow-rRV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rXf-1K-EJk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7nh-xX-431"/>
+                <constraint firstItem="1Qc-Mz-b6Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HBK-s4-CTn"/>
+                <constraint firstAttribute="bottom" secondItem="rXf-1K-EJk" secondAttribute="bottom" id="I6N-n3-6NK"/>
+                <constraint firstItem="rXf-1K-EJk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JDn-pH-1Vc"/>
+                <constraint firstAttribute="bottom" secondItem="1Qc-Mz-b6Y" secondAttribute="bottom" id="i3R-bE-BzX"/>
+                <constraint firstItem="1Qc-Mz-b6Y" firstAttribute="leading" secondItem="rXf-1K-EJk" secondAttribute="trailing" id="iar-JF-1yz"/>
+                <constraint firstAttribute="trailing" secondItem="1Qc-Mz-b6Y" secondAttribute="trailing" id="ooS-Zu-CDy"/>
+            </constraints>
+            <point key="canvasLocation" x="328" y="165"/>
+        </view>
+    </objects>
+</document>
